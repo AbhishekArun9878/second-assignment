@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+body {
+    font-family: "Barlow", "sans-serif";
+    line-height: 1.7;
+    color: #516171;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
+
+a {
+    color: #092032;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Navbar */
+.top-nav {
+    background-color: #ff4d29;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: #ffffff;
+}
+
+.top-nav,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.custom-navbar {
+    margin-right: 510px; 
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #ff4d29;
+}
+
+.navbar {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navlink-nav .nav-link.active {
+    color: #ff4d29;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+.btn-brand {
+    background-color: #ff4d29;
+    color: #ffffff;
+    border-color: #ff4d29;
+    transition: all 0.4s ease;
+}
+
+.btn-brand:hover {
+    color: #ffffff;
+    background-color: #ff4d29;
+}
+
+/* Slider */
+.slide1 {
+    background-image: url("../images/nav.jpg");
+}
+
+.slide2 {
+    background-image: url("../images/nav2.jpg");
+}
+
+/* Owl Kerosil */
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    width: 60px !important;
+    height: 60px !important;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    margin-top: -30px !important;
+    color: #ffffff !important;
+    font-size: 17px !important;
+    border-radius: 100px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-next:hover,
+.owl-prev:hover {
+    background-color: #ff4d29 !important;
+}
+
+/* Books */
+#team .intro p {
+    font-family: 'Barlow', sans-serif; 
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555; 
+    margin-top: 20px;
+}
+
+#team .intro h6 {
+    font-family: 'Barlow', sans-serif; 
+    font-size: 34px;
+    font-weight: 700;
+    color: #ff4d29; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#team .team-member {
+    position: relative;
+    overflow: hidden;
+}
+
+#team .team-member img.book {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    width: 80%;
+    z-index: 2;
+}
+
+#team .team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#team .team-member:hover .overlay {
+    opacity: 1;
+}
+
+#team .team-member .overlay a.read-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 20px; 
+    font-size: 18px; 
+    padding: 10px 20px; 
+}
+
+#team .team-member .overlay a.read-now-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
